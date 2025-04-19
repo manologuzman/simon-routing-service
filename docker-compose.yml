@@ -7,7 +7,7 @@ services:
     ports:
       - "6379:6379"
 
-  geo-service:
+  routing-service:
     build: .
     container_name: routing-service
     ports:
