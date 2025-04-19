@@ -16,11 +16,7 @@ export class RoutingService {
     const lockKey = `lock:${dto.deviceId}`;
     const acquired = await this.redisService
       .getClient()
-      .set(lockKey, 'locked', {
-        NX: true,
-        EX: 5,
-      });
-
+      .set('mykey', 'myvalue', 'EX', 5, 'NX');
     if (!acquired) {
       await this.sendAlert({
         type: 'routing-error',
