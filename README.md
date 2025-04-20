@@ -38,7 +38,6 @@ Crear un archivo `.env` en la raíz del proyecto con las siguientes variables:
 ```
 REDIS_HOST=127.0.0.1
 REDIS_PORT=6379
-REDIS_TTL_SECONDS=300
 PORT=3002
 AUDIT_SERVICE_URL=http://127.0.0.1:3003
 ```

@@ -70,6 +70,7 @@ export class RoutingService {
         alert,
       );
     } catch (e) {
+      console.log(e);
       const errorMessage = e instanceof Error ? e.message : 'Error desconocido';
       console.error('Error enviando alerta al audit-service:', errorMessage);
     }
