@@ -383,7 +383,7 @@ export class RoutingService {
     const lockKey &#x3D; &#x60;lock:${dto.deviceId}&#x60;;
     const acquired &#x3D; await this.redisService
       .getClient()
-      .set(&#x27;mykey&#x27;, &#x27;myvalue&#x27;, &#x27;EX&#x27;, 5, &#x27;NX&#x27;);
+      .set(key, lockKey, &#x27;EX&#x27;, 5, &#x27;NX&#x27;);
     if (!acquired) {
       await this.sendAlert({
         type: &#x27;routing-error&#x27;,
