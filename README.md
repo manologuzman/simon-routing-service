@@ -9,7 +9,7 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-# Microservicio de auditoría
+# Microservicio de audit
 
 El microservicio calcula la ruta óptima es responsable de calcular la ruta óptima usando un algoritmo mock (ej: A\* simplificado):
 
